@@ -14,25 +14,26 @@
     <img src="icon.png" alt="icon">
     <h3>FORM PROJECT</h3>
     <img src="port.jpg" alt="port">
-    <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.</p>
-    <p>You know you want to.</p>
+    <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <i>now</i> to get started.</p>
+    <p>You <i>know</i> you want to.</p>
+    <form action="#" method="get">
     <fieldset>
         <legend>Let's do this</legend>
         
         <label for="name">FIRST NAME</label> 
-        <input type="text" id="name" name="name_user" value="name">
+        <input type="text" id="name" name="name_user" value="name" required>
 
         <label for="lastname">LAST NAME</label>     
-        <input type="text" id="lastname" name="last_name" value="lastname">
+        <input type="text" id="lastname" name="last_name" value="lastname" required>
             
         <label for="email">EMAIL</label>
-        <input type="email" id="email" name="email">
+        <input type="email" id="email" name="email" required>
 
         <label for="phone">PHONE NUMBER</label>
-        <input type="number" id="phone" name="phone">
+        <input type="text" id="phone" name="phone"  minlength="6" required> 
 
         <label for="password">PASSWORD</label>
-        <input type="password" id="password" name="password">
+        <input type="password" id="password" name="password" required>
 
         <label for="confirmation">CONFIRM PASSWORD</label>
         <input type="password" id="confirmation" name="confirmation">
@@ -42,7 +43,8 @@
 
 
     </fieldset>
-    <p>Already have an account? Log in</p>
+</form>
+    <p>Already have an account? <a href="#">Log in</a></p>
     
 </body>
 </html>
